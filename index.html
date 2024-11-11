@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href=""><img src="./img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="">About</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Cource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>World's biggest University</h1>
+            <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>  the industry's standard dummy text ever since the 1500s s</p>
+            <a href="#" class="btn">Visit as to Know more</a>
+        </div>
+    </header>
+
+    <section class="course section-content">
+        <h1>Course we Provide</h1>
+        <p>is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been <br>  the industry's standard dummy text ever since the 1500s s</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="campus section-content">
+        <h1>Our Global Campus</h1>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+    </section>
+
+    <script>
+        var navLinks =document.getElementById('navLinks');
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        function openMenu(){
+            navLinks.style.right="00px";
+
+        }
+    </script>
+</body>
+</html>
