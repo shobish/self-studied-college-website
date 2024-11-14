@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href=""><img src="./img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="">About</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Cource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+       <h1>ABOUT US</h1>
+    </div>
+
+    <section class="about-us section-content">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the largest university</h1>
+                <p>If your Aadhaar number is already registered with DigiLocker, you can access your account using your credentials. This means that you have previously linked your Aadhaar number to your DigiLocker account, and you can now log in to access your digital documents and certificates.</p>
+                <a href="" class="btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+              <img src="./img/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+ 
+
+    <!-- FOOTER -->
+    <section class="footer ">
+        <h1>ABOUT US</h1>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with<i class="fa-solid fa-heart"></i> by easy tutorials </p>
+    </section>
+
+    <script>
+        var navLinks =document.getElementById('navLinks');
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        function openMenu(){
+            navLinks.style.right="00px";
+
+        }
+    </script>
+</body>
+</html>

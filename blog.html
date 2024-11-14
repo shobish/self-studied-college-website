@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="sub-header">
+        <nav>
+            <a href=""><img src="./img/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="nav-item">
+                       <a href="">About</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Cource</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+            <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+       <h1>BLOG</h1>
+    </div>
+    <section class="blog section-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="./img/certificate.jpg" alt="">
+                <h2>Our certificate and online programs for 2024</h2>
+                <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+                </p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment</h3>
+                    <form action="" class="comment-form">
+                        <input type="text" placeholder="Enter name">
+                        <input type="email" placeholder="enter email">
+                        <textarea row="5" aria-placeholder="Your comment" ></textarea>
+                        <button type="submit" class="btn red-btn"> POST COMMENT</button>
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="blog-right">
+                <h3>POST Categories</h3>
+                <div class="">
+                    <span>Business analytics</span>
+                    <span>21</span>
+                </div>
+                <div class="">
+                    <span>DAta science</span>
+                    <span>28</span>
+                </div>
+                <div class="">
+                    <span>machinelearning</span>
+                    <span>25</span>
+                </div>
+                <div class="">
+                    <span>Computer science</span>
+                    <span>15</span>
+                </div>
+                <div class="">
+                    <span>Autocard</span>
+                    <span>15</span>
+                </div>
+                <div class="">
+                    <span>Commerce</span>
+                    <span>15</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- FOOTER -->
+    <section class="footer ">
+        <h1>ABOUT US</h1>
+        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-square-x-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+        <p>Made with<i class="fa-solid fa-heart"></i> by easy tutorials </p>
+    </section>
+  
+
+
+
+    <script>
+        var navLinks =document.getElementById('navLinks');
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+        function openMenu(){
+            navLinks.style.right="00px";
+
+        }
+    </script>
+</body>
+</html>
