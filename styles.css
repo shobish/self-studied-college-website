@@ -129,7 +129,7 @@ nav .fa-solid{
         display: block;
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: var(--primary-color);
         height: 100vh;
         width: 200px;
@@ -450,4 +450,48 @@ margin-top: 15px;
 }
 .blog .comment-box .comment-form button{
     margin: 10px 0;
+}
+
+/* location */
+.location iframe{
+    width: 100%;
+}
+
+.contact-us .contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.contact-us .contact-col div{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    padding: 15px;
+}
+.contact-us .contact-col i{
+    margin-right: 15px;
+    color: #f44336;
+}
+.contact-us .contact-col h5{
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+}
+.contact-us .contact-col p{
+    color: #555;
+
+}
+.contact-us  .contact-form input ,.contact-us  .contact-form textarea {
+    width: 100%;
+    padding: 10px ;
+    margin: 15px 0; 
+    border: 1px solid #555;
+    outline: none;
+   
+
+}
+.contact-us .contact-form .btn .red-btn{
+   text-align: start ;
 }
